@@ -7,6 +7,7 @@ public class Game
     {
         Scanner inpur=new Scanner(System.in);
         Random random=new Random();
-        
+        String Choices={"rock","paper","scissor"};
+
     }
 }
