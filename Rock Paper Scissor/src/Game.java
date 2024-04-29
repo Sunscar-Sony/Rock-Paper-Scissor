@@ -34,9 +34,7 @@ public class Game
                 {
                     System.out.println("Result : TIE");
                 }
-                else if((UserChoice.equals("rock") && ComputerChoice.equals("scissors")) ||
-                (UserChoice.equals("paper") && ComputerChoice.equals("rock")) ||
-                (UserChoice.equals("scissors") && ComputerChoice.equals("paper")))
+                else if((UserChoice.equals("rock") && ComputerChoice.equals("scissors")) || (UserChoice.equals("paper") && ComputerChoice.equals("rock")) ||(UserChoice.equals("scissors") && ComputerChoice.equals("paper")))
                 {
                     System.out.println("Result : YOU WIN !");
                 }
