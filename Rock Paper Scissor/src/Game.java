@@ -11,9 +11,9 @@ public class Game
 
         while(true)
         {
-            System.out.println("Enter your Choice Rock, paper, Scissor or Quit :");
+            System.out.println("Enter your Choice Rock, Paper, Scissor or Quit :");
             String UserChoice=input.nextLine().toLowerCase();
-            System.out.println("Your Choice is :"+ UserChoice+"\n");
+            System.out.println("Your Choice is :"+ UserChoice);
             if(UserChoice.equals("quit"))
             {
                 System.out.println("Thanks For Playing...");
@@ -29,6 +29,21 @@ public class Game
                 int computerIndex=random.nextInt(3);
                 String ComputerChoice=Choices[computerIndex];
                 System.out.println("Computer Choice is :"+ ComputerChoice+"\n");
+
+                if(UserChoice.equals(ComputerChoice))
+                {
+                    System.out.println("Result : TIE");
+                }
+                else if((UserChoice.equals("rock") && ComputerChoice.equals("scissors")) ||
+                (UserChoice.equals("paper") && ComputerChoice.equals("rock")) ||
+                (UserChoice.equals("scissors") && ComputerChoice.equals("paper")))
+                {
+                    System.out.println("Result : YOU WIN !");
+                }
+                else
+                {
+                    System.out.println("Result : YOU LOOSE...");
+                }
             }
         }
     }
