@@ -8,7 +8,7 @@ public class Game
         Scanner input=new Scanner(System.in);
         Random random=new Random();
         String[] Choices={"rock","paper","scissor"};
-
+        System.out.println("Game Started...");
         while(true)
         {
             System.out.println("Enter your Choice Rock, Paper, Scissor or Quit :");
